@@ -2,7 +2,7 @@
 //  Copyright (c) 2013 Wikimedia Foundation. Provided under MIT-style license; please copy and modify!
 
 #import "MWKSection+DisplayHtml.h"
-#import "SessionSingleton.h"
+//#import "SessionSingleton.h"
 #import "Defines.h"
 #import "NSString+WMFExtras.h"
 

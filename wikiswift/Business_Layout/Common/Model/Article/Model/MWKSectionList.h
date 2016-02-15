@@ -7,6 +7,7 @@
 //
 
 #import "MWKDataObject.h"
+#import "Global.h"
 
 @class MWKSection;
 
