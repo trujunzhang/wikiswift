@@ -67,9 +67,10 @@ extern NSString* const WMFDefaultSiteDomain;
 /// @name User Interface Properties
 ///
 
-- (UIUserInterfaceLayoutDirection)layoutDirection;
-
-- (NSTextAlignment)textAlignment;
+// TODO: djzhang
+//- (UIUserInterfaceLayoutDirection)layoutDirection;
+// TODO: djzhang
+//- (NSTextAlignment)textAlignment;
 
 ///
 /// @name Title Factory Convenience Methods

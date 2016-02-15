@@ -3,9 +3,9 @@
 
 #import <BlocksKit/BlocksKit.h>
 #import "NSString+WMFExtras.h"
-#import "Wikipedia-Swift.h"
+//#import "Wikipedia-Swift.h"
 
-#import <BlocksKit/BlocksKit.h>
+#include "Global.h"
 
 NSString* const MWKArticleSavedNotification      = @"MWKArticleSavedNotification";
 NSString* const MWKArticleKey                    = @"MWKArticleKey";

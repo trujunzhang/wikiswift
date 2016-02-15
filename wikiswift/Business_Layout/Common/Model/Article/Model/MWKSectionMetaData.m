@@ -1,6 +1,7 @@
 
 #import "MWKSectionMetaData.h"
 #import "MTLValueTransformer+WMFNumericValueTransformer.h"
+#import "Global.h"
 
 @implementation MWKSectionMetaData
 

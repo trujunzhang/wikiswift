@@ -7,6 +7,8 @@
 //
 
 #import "MWKImage+CanonicalFilenames.h"
+#import "Global.h"
+#import "NSArray+BlocksKit.h"
 
 @implementation MWKImage (CanonicalFilenames)
 

@@ -7,6 +7,7 @@
 //
 
 #import "MWKSiteDataObject.h"
+#import <BlocksKit/BlocksKit.h>
 
 @class MWKArticle;
 @class MWKSection;

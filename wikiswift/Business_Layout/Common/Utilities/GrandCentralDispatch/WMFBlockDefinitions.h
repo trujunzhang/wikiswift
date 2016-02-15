@@ -12,8 +12,7 @@
 @class MWKArticle;
 
 typedef void (^ WMFArticleHandler)(MWKArticle* article);
-// TODO: djzhang
-typedef void (^ WMFProgressHandler)(int progress);
+typedef void (^ WMFProgressHandler)(CGFloat progress);
 typedef void (^ WMFErrorHandler)(NSError* error);
 
 #endif
