@@ -14,6 +14,14 @@
 		5E3452C01C71924C007D3D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3452BE1C71924C007D3D11 /* LaunchScreen.storyboard */; };
 		5E3452CB1C71924D007D3D11 /* wikiswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3452CA1C71924D007D3D11 /* wikiswiftTests.swift */; };
 		5E3452D61C71924D007D3D11 /* wikiswiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3452D51C71924D007D3D11 /* wikiswiftUITests.swift */; };
+		5EA85A881C71C469007213FD /* SourceIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA85A871C71C469007213FD /* SourceIcons.xcassets */; };
+		5EA85A931C71C5C4007213FD /* WMFExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A921C71C5C4007213FD /* WMFExploreViewController.swift */; };
+		5EA85A951C71C5F9007213FD /* WMFSavedArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A941C71C5F9007213FD /* WMFSavedArticleTableViewController.swift */; };
+		5EA85A971C71C61A007213FD /* WMFArticleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A961C71C61A007213FD /* WMFArticleListTableViewController.swift */; };
+		5EA85A991C71C638007213FD /* WMFHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A981C71C638007213FD /* WMFHistoryTableViewController.swift */; };
+		5EA85A9B1C71C67A007213FD /* WMFArticleBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A9A1C71C67A007213FD /* WMFArticleBrowserViewController.swift */; };
+		5EA85A9D1C71C6A4007213FD /* WMFArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A9C1C71C6A4007213FD /* WMFArticleViewController.swift */; };
+		5EA85A9F1C71C6C8007213FD /* WMFArticleViewController_Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A9E1C71C6C8007213FD /* WMFArticleViewController_Private.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		5E3452D11C71924D007D3D11 /* wikiswiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wikiswiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3452D51C71924D007D3D11 /* wikiswiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikiswiftUITests.swift; sourceTree = "<group>"; };
 		5E3452D71C71924D007D3D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA85A871C71C469007213FD /* SourceIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SourceIcons.xcassets; sourceTree = "<group>"; };
+		5EA85A921C71C5C4007213FD /* WMFExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFExploreViewController.swift; sourceTree = "<group>"; };
+		5EA85A941C71C5F9007213FD /* WMFSavedArticleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFSavedArticleTableViewController.swift; sourceTree = "<group>"; };
+		5EA85A961C71C61A007213FD /* WMFArticleListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleListTableViewController.swift; sourceTree = "<group>"; };
+		5EA85A981C71C638007213FD /* WMFHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFHistoryTableViewController.swift; sourceTree = "<group>"; };
+		5EA85A9A1C71C67A007213FD /* WMFArticleBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleBrowserViewController.swift; sourceTree = "<group>"; };
+		5EA85A9C1C71C6A4007213FD /* WMFArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleViewController.swift; sourceTree = "<group>"; };
+		5EA85A9E1C71C6C8007213FD /* WMFArticleViewController_Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleViewController_Private.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +113,13 @@
 		5E3452B41C71924C007D3D11 /* wikiswift */ = {
 			isa = PBXGroup;
 			children = (
+				5EA85A891C71C5B7007213FD /* Business_Layout */,
 				5E3452B51C71924C007D3D11 /* AppDelegate.swift */,
 				5E3452B71C71924C007D3D11 /* ViewController.swift */,
 				5E3452B91C71924C007D3D11 /* Main.storyboard */,
 				5E3452BC1C71924C007D3D11 /* Assets.xcassets */,
 				5E3452BE1C71924C007D3D11 /* LaunchScreen.storyboard */,
+				5EA85A871C71C469007213FD /* SourceIcons.xcassets */,
 				5E3452C11C71924C007D3D11 /* Info.plist */,
 			);
 			path = wikiswift;
@@ -123,6 +141,92 @@
 				5E3452D71C71924D007D3D11 /* Info.plist */,
 			);
 			path = wikiswiftUITests;
+			sourceTree = "<group>";
+		};
+		5EA85A891C71C5B7007213FD /* Business_Layout */ = {
+			isa = PBXGroup;
+			children = (
+				5EA85A8A1C71C5B7007213FD /* Common */,
+				5EA85A8D1C71C5B7007213FD /* Features */,
+			);
+			path = Business_Layout;
+			sourceTree = "<group>";
+		};
+		5EA85A8A1C71C5B7007213FD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5EA85A8B1C71C5B7007213FD /* ArticleList */,
+				5EA85A8C1C71C5B7007213FD /* Cells */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5EA85A8B1C71C5B7007213FD /* ArticleList */ = {
+			isa = PBXGroup;
+			children = (
+				5EA85A961C71C61A007213FD /* WMFArticleListTableViewController.swift */,
+			);
+			path = ArticleList;
+			sourceTree = "<group>";
+		};
+		5EA85A8C1C71C5B7007213FD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5EA85A8D1C71C5B7007213FD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5EA85A8E1C71C5B7007213FD /* Article */,
+				5EA85A8F1C71C5B7007213FD /* Explore */,
+				5EA85A901C71C5B7007213FD /* Histroy */,
+				5EA85A911C71C5B7007213FD /* SavedPages */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5EA85A8E1C71C5B7007213FD /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				5EA85AA01C71C6E7007213FD /* ArticleComponents */,
+				5EA85A9E1C71C6C8007213FD /* WMFArticleViewController_Private.swift */,
+				5EA85A9C1C71C6A4007213FD /* WMFArticleViewController.swift */,
+				5EA85A9A1C71C67A007213FD /* WMFArticleBrowserViewController.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		5EA85A8F1C71C5B7007213FD /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				5EA85A921C71C5C4007213FD /* WMFExploreViewController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		5EA85A901C71C5B7007213FD /* Histroy */ = {
+			isa = PBXGroup;
+			children = (
+				5EA85A981C71C638007213FD /* WMFHistoryTableViewController.swift */,
+			);
+			path = Histroy;
+			sourceTree = "<group>";
+		};
+		5EA85A911C71C5B7007213FD /* SavedPages */ = {
+			isa = PBXGroup;
+			children = (
+				5EA85A941C71C5F9007213FD /* WMFSavedArticleTableViewController.swift */,
+			);
+			path = SavedPages;
+			sourceTree = "<group>";
+		};
+		5EA85AA01C71C6E7007213FD /* ArticleComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ArticleComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E3452C01C71924C007D3D11 /* LaunchScreen.storyboard in Resources */,
+				5EA85A881C71C469007213FD /* SourceIcons.xcassets in Resources */,
 				5E3452BD1C71924C007D3D11 /* Assets.xcassets in Resources */,
 				5E3452BB1C71924C007D3D11 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA85A931C71C5C4007213FD /* WMFExploreViewController.swift in Sources */,
 				5E3452B81C71924C007D3D11 /* ViewController.swift in Sources */,
 				5E3452B61C71924C007D3D11 /* AppDelegate.swift in Sources */,
+				5EA85A9F1C71C6C8007213FD /* WMFArticleViewController_Private.swift in Sources */,
+				5EA85A9B1C71C67A007213FD /* WMFArticleBrowserViewController.swift in Sources */,
+				5EA85A951C71C5F9007213FD /* WMFSavedArticleTableViewController.swift in Sources */,
+				5EA85A971C71C61A007213FD /* WMFArticleListTableViewController.swift in Sources */,
+				5EA85A9D1C71C6A4007213FD /* WMFArticleViewController.swift in Sources */,
+				5EA85A991C71C638007213FD /* WMFHistoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +599,7 @@
 				5E3452DC1C71924D007D3D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E3452DD1C71924D007D3D11 /* Build configuration list for PBXNativeTarget "wikiswiftTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +608,7 @@
 				5E3452DF1C71924D007D3D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E3452E01C71924D007D3D11 /* Build configuration list for PBXNativeTarget "wikiswiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +617,7 @@
 				5E3452E21C71924D007D3D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
