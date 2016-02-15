@@ -7,7 +7,7 @@
 //
 
 #import "WMFApiJsonResponseSerializer.h"
-#import "WMFNetworkUtilities.h"
+//#import "WMFNetworkUtilities.h"
 
 @implementation WMFApiJsonResponseSerializer
 
@@ -21,7 +21,8 @@
     NSDictionary* apiError = json[@"error"];
     if (apiError) {
         if (error) {
-            *error = WMFErrorForApiErrorObject(apiError);
+            // TODO: djzhang
+//            *error = WMFErrorForApiErrorObject(apiError);
         }
         return nil;
     }

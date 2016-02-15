@@ -3,6 +3,7 @@
 
 #import "MediaWikiKit.h"
 #import "NSObjectUtilities.h"
+#import "Global.h"
 
 NSString* const WMFDefaultSiteDomain = @"wikipedia.org";
 

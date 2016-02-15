@@ -1,6 +1,7 @@
 
 #import "MediaWikiKit.h"
 #import "MWKList+Subclass.h"
+#import "Global.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

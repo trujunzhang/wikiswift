@@ -8,6 +8,7 @@
 
 #import "MWKSection+HTMLImageExtraction.h"
 #import <hpple/TFHpple.h>
+#include "Global.h"
 
 @implementation MWKSection (HTMLImageParsing)
 

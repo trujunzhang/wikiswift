@@ -3,8 +3,8 @@
 #import "WikipediaAppUtils.h"
 #import "MediaWikiKit.h"
 #import "WMFImageURLParsing.h"
-#import "WMFGeometry.h"
-#import "Wikipedia-Swift.h"
+//#import "WMFGeometry.h"
+//#import "Wikipedia-Swift.h"
 #import "NSURL+WMFExtras.h"
 
 @interface MWKImage ()
@@ -238,7 +238,10 @@
 }
 
 - (BOOL)isDownloaded {
-    return [[WMFImageController sharedInstance] hasImageWithURL:[NSURL URLWithString:self.sourceURLString]];
+    // TODO: djzhang
+    
+    return YES;
+//    return [[WMFImageController sharedInstance] hasImageWithURL:[NSURL URLWithString:self.sourceURLString]];
 }
 
 - (BOOL)isEqual:(id)object {
@@ -293,21 +296,24 @@
     return [self.article imageWithURL:largestNonCanonicalVariantURL];
 }
 
-- (UIImage*)imageFromAppImageCache {
-    return [[WMFImageController sharedInstance] syncCachedImageWithURL:self.sourceURLString];
-}
+// TODO: djzhang
+//- (UIImage*)imageFromAppImageCache {
+//    return [[WMFImageController sharedInstance] syncCachedImageWithURL:self.sourceURLString];
+//}
 
 - (BOOL)isLargeEnoughForGalleryInclusion {
     // HAX: If this image MWKImage record doesn't have width/height values (because it
     // wasn't determined when parsing the article HTML's image url) see if the cache can
     // tell us the size.
     if (![self hasEstimatedSize]) {
-        UIImage* image = [self imageFromAppImageCache];
-        if (!CGSizeEqualToSize(image.size, CGSizeZero)) {
-            self.width  = @(image.size.width);
-            self.height = @(image.size.height);
-            [self save];
-        }
+        // TODO: djzhang
+        
+//        UIImage* image = [self imageFromAppImageCache];
+//        if (!CGSizeEqualToSize(image.size, CGSizeZero)) {
+//            self.width  = @(image.size.width);
+//            self.height = @(image.size.height);
+//            [self save];
+//        }
     }
 
     // HAX: if self STILL doesn't have an estimated size we can likely infer if it's big

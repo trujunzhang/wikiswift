@@ -8,6 +8,7 @@
 
 #import "MWKCitation.h"
 #import <hpple/TFHpple.h>
+#import "Global.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,10 +23,11 @@ NS_ASSUME_NONNULL_BEGIN
 @synthesize backlinkIdentifiers = _backlinkIdentifiers;
 
 + (MTLPropertyStorage)storageBehaviorForPropertyWithKey:(NSString*)propertyKey {
-    if ([propertyKey isEqualToString:WMF_SAFE_KEYPATH([MWKCitation new], citationHTML)]
-        || [propertyKey isEqualToString:WMF_SAFE_KEYPATH([MWKCitation new], backlinkIdentifiers)]) {
-        return MTLPropertyStorageTransitory;
-    }
+    // TODO: djzhang
+//    if ([propertyKey isEqualToString:WMF_SAFE_KEYPATH([MWKCitation new], citationHTML)]
+//        || [propertyKey isEqualToString:WMF_SAFE_KEYPATH([MWKCitation new], backlinkIdentifiers)]) {
+//        return MTLPropertyStorageTransitory;
+//    }
     return MTLPropertyStoragePermanent;
 }
 
@@ -63,30 +65,34 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (NSString*)citationHTML {
-    if (_citationHTML) {
-        _citationHTML = [[[[TFHpple hppleWithHTMLData:[self.rawHTML dataUsingEncoding:NSUTF8StringEncoding]]
-                           searchWithXPathQuery:@"/html/body/*[not(contains(@class, 'mw-cite-backlink')]"]
-                          valueForKey:WMF_SAFE_KEYPATH(TFHppleElement.new, raw)] componentsJoinedByString:@""] ? : @"";
-        NSAssert(_citationHTML.length, @"Failed to parse citation from raw HTML: %@", self.rawHTML);
-    }
+    // TODO: djzhang
+    
+//    if (_citationHTML) {
+//        _citationHTML = [[[[TFHpple hppleWithHTMLData:[self.rawHTML dataUsingEncoding:NSUTF8StringEncoding]]
+//                           searchWithXPathQuery:@"/html/body/*[not(contains(@class, 'mw-cite-backlink')]"]
+//                          valueForKey:WMF_SAFE_KEYPATH(TFHppleElement.new, raw)] componentsJoinedByString:@""] ? : @"";
+//        NSAssert(_citationHTML.length, @"Failed to parse citation from raw HTML: %@", self.rawHTML);
+//    }
     return _citationHTML;
 }
 
 - (NSArray*)backlinkIdentifiers {
-    if (_backlinkIdentifiers) {
-        _backlinkIdentifiers = [[[[TFHpple hppleWithHTMLData:[self.rawHTML dataUsingEncoding:NSUTF8StringEncoding]]
-                                  searchWithXPathQuery:@"/html/body//*[contains(@class,'mw-cite-backlink')]//a"]
-                                 bk_map:^NSString*(TFHppleElement* el) {
-            return el.attributes[@"id"];
-        }]
-                                bk_reject:^BOOL (id obj) {
-            return WMF_IS_EQUAL(obj, [NSNull null]);
-        }];
-        if (!_backlinkIdentifiers) {
-            _backlinkIdentifiers = @[];
-        }
-        NSAssert(_backlinkIdentifiers.count, @"Failed to parse backlinks from raw HTML: %@", self.rawHTML);
-    }
+    // TODO: djzhang
+    
+//    if (_backlinkIdentifiers) {
+//        _backlinkIdentifiers = [[[[TFHpple hppleWithHTMLData:[self.rawHTML dataUsingEncoding:NSUTF8StringEncoding]]
+//                                  searchWithXPathQuery:@"/html/body//*[contains(@class,'mw-cite-backlink')]//a"]
+//                                 bk_map:^NSString*(TFHppleElement* el) {
+//            return el.attributes[@"id"];
+//        }]
+//                                bk_reject:^BOOL (id obj) {
+//            return WMF_IS_EQUAL(obj, [NSNull null]);
+//        }];
+//        if (!_backlinkIdentifiers) {
+//            _backlinkIdentifiers = @[];
+//        }
+//        NSAssert(_backlinkIdentifiers.count, @"Failed to parse backlinks from raw HTML: %@", self.rawHTML);
+//    }
     return _backlinkIdentifiers;
 }
 

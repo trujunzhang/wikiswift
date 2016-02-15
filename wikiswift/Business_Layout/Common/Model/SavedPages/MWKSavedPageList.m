@@ -2,7 +2,8 @@
 #import "MWKDataStore.h"
 #import "MWKSavedPageListDataExportConstants.h"
 #import "MWKList+Subclass.h"
-#import "Wikipedia-Swift.h"
+//#import "Wikipedia-Swift.h"
+#include "Global.h"
 
 NSString* const MWKSavedPageExportedEntriesKey       = @"entries";
 NSString* const MWKSavedPageExportedSchemaVersionKey = @"schemaVersion";
@@ -133,7 +134,9 @@ NSString* const MWKSavedPageExportedSchemaVersionKey = @"schemaVersion";
 }
 
 + (NSArray<NSDictionary*>*)savedEntryDataFromListWithUnknownSchema:(NSDictionary*)data {
-    return [data[MWKSavedPageExportedEntriesKey] wmf_reverseArray];
+    // TODO: djzhang
+//    return [data[MWKSavedPageExportedEntriesKey] wmf_reverseArray];
+    return NULL;
 }
 
 #pragma mark - Export

@@ -3,8 +3,8 @@
 
 #import "WikipediaAppUtils.h"
 #import "WMFAssetsFile.h"
-#import "SessionSingleton.h"
-#import "NSBundle+WMFInfoUtils.h"
+//#import "SessionSingleton.h"
+//#import "NSBundle+WMFInfoUtils.h"
 #import <BlocksKit/BlocksKit.h>
 #import "MediaWikiKit.h"
 
@@ -18,13 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
     [[NSNotificationCenter defaultCenter] addObserver:[self class] selector:@selector(didReceiveMemoryWarningWithNotification:) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
 }
 
-+ (NSString*)appVersion {
-    return [[NSBundle mainBundle] wmf_versionForCurrentBundleIdentifier];
-}
+//+ (NSString*)appVersion {
+//    return [[NSBundle mainBundle] wmf_versionForCurrentBundleIdentifier];
+//}
 
-+ (NSString*)bundleID {
-    return [[NSBundle mainBundle] wmf_bundleIdentifier];
-}
+//+ (NSString*)bundleID {
+//    return [[NSBundle mainBundle] wmf_bundleIdentifier];
+//}
 
 + (NSString*)formFactor {
     UIUserInterfaceIdiom ff = UI_USER_INTERFACE_IDIOM();
@@ -44,15 +44,15 @@ NS_ASSUME_NONNULL_BEGIN
     }
 }
 
-+ (NSString*)versionedUserAgent {
-    UIDevice* d = [UIDevice currentDevice];
-    return [NSString stringWithFormat:@"WikipediaApp/%@ (%@ %@; %@)",
-            [[NSBundle mainBundle] wmf_debugVersion],
-            [d systemName],
-            [d systemVersion],
-            [self formFactor]
-    ];
-}
+//+ (NSString*)versionedUserAgent {
+//    UIDevice* d = [UIDevice currentDevice];
+//    return [NSString stringWithFormat:@"WikipediaApp/%@ (%@ %@; %@)",
+//            [[NSBundle mainBundle] wmf_debugVersion],
+//            [d systemName],
+//            [d systemVersion],
+//            [self formFactor]
+//    ];
+//}
 
 
 

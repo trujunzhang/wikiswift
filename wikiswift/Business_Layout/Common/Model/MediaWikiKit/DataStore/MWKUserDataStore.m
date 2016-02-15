@@ -1,6 +1,6 @@
 
 #import "MediaWikiKit.h"
-#import "Wikipedia-Swift.h"
+//#import "Wikipedia-Swift.h"
 
 
 @interface MWKUserDataStore ()
@@ -44,15 +44,19 @@
 }
 
 - (AnyPromise*)save {
-    return [self.historyList save].then([self.savedPageList save]).then([self.recentSearchList save]);
+    return NULL;
+    // TODO: djzhang
+//    return [self.historyList save].then([self.savedPageList save]).then([self.recentSearchList save]);
 }
 
 - (AnyPromise*)reset {
+    
     self.historyList      = nil;
     self.savedPageList    = nil;
     self.recentSearchList = nil;
-
-    return [AnyPromise promiseWithValue:nil];
+    return NULL;
+    // TODO: djzhang
+//    return [AnyPromise promiseWithValue:nil];
 }
 
 @end

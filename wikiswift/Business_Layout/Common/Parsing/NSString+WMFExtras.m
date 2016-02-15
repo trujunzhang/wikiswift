@@ -2,7 +2,7 @@
 #import "NSString+WMFExtras.h"
 #import "TFHpple.h"
 #import <CommonCrypto/CommonDigest.h>
-#import "SessionSingleton.h"
+//#import "SessionSingleton.h"
 #import "MWLanguageInfo.h"
 #import "NSDateFormatter+WMFExtensions.h"
 #import <MobileCoreServices/MobileCoreServices.h>
@@ -104,7 +104,9 @@
 }
 
 - (NSLocale*)getLocaleForCurrentSearchDomain {
-    NSString* domain = [SessionSingleton sharedInstance].currentArticleSite.language;
+    // TODO: djzhang
+    NSString* domain = @"en";
+//    NSString* domain = [SessionSingleton sharedInstance].currentArticleSite.language;
 
     MWLanguageInfo* languageInfo = [MWLanguageInfo languageInfoForCode:domain];
 

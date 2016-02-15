@@ -251,7 +251,9 @@ static NSString* const MWKImageInfoFilename = @"ImageInfo.plist";
 
     [self saveData:data path:path name:filename];
 
-    [image updateWithData:data];
+    // TODO: djzhang
+    
+//    [image updateWithData:data];
     [self saveImage:image];
 }
 
@@ -467,7 +469,9 @@ static NSString* const MWKImageInfoFilename = @"ImageInfo.plist";
     NSString* path = [self pathForArticle:article];
 
     // delete article images *before* metadata (otherwise we won't be able to retrieve image lists)
-    [[WMFImageController sharedInstance] deleteImagesWithURLs:[article.allImageURLs allObjects]];
+    // TODO: djzhang
+    
+//    [[WMFImageController sharedInstance] deleteImagesWithURLs:[article.allImageURLs allObjects]];
 
     // delete article metadata last
     [[NSFileManager defaultManager] removeItemAtPath:path error:nil];

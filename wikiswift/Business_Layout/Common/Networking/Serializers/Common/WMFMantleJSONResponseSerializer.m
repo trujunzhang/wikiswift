@@ -10,6 +10,8 @@
 #import <Mantle/Mantle.h>
 #import "NSError+WMFExtensions.h"
 
+#import "Global.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
