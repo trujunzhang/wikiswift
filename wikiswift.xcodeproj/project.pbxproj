@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FED80C12686AC19C1A32304 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9FC9498D1BE0CE96DBA9C3 /* Pods.framework */; };
 		5E3452B61C71924C007D3D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3452B51C71924C007D3D11 /* AppDelegate.swift */; };
 		5E3452B81C71924C007D3D11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3452B71C71924C007D3D11 /* ViewController.swift */; };
 		5E3452BB1C71924C007D3D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3452B91C71924C007D3D11 /* Main.storyboard */; };
@@ -15,13 +16,38 @@
 		5E3452CB1C71924D007D3D11 /* wikiswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3452CA1C71924D007D3D11 /* wikiswiftTests.swift */; };
 		5E3452D61C71924D007D3D11 /* wikiswiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3452D51C71924D007D3D11 /* wikiswiftUITests.swift */; };
 		5EA85A881C71C469007213FD /* SourceIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA85A871C71C469007213FD /* SourceIcons.xcassets */; };
-		5EA85A931C71C5C4007213FD /* WMFExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A921C71C5C4007213FD /* WMFExploreViewController.swift */; };
-		5EA85A951C71C5F9007213FD /* WMFSavedArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A941C71C5F9007213FD /* WMFSavedArticleTableViewController.swift */; };
-		5EA85A971C71C61A007213FD /* WMFArticleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A961C71C61A007213FD /* WMFArticleListTableViewController.swift */; };
-		5EA85A991C71C638007213FD /* WMFHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A981C71C638007213FD /* WMFHistoryTableViewController.swift */; };
-		5EA85A9B1C71C67A007213FD /* WMFArticleBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A9A1C71C67A007213FD /* WMFArticleBrowserViewController.swift */; };
-		5EA85A9D1C71C6A4007213FD /* WMFArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A9C1C71C6A4007213FD /* WMFArticleViewController.swift */; };
-		5EA85A9F1C71C6C8007213FD /* WMFArticleViewController_Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA85A9E1C71C6C8007213FD /* WMFArticleViewController_Private.swift */; };
+		5EAADC5A1C71D36D004DB4D0 /* WMFArticleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC101C71D36D004DB4D0 /* WMFArticleListTableViewController.swift */; };
+		5EAADC5B1C71D36D004DB4D0 /* MWKArticle+HTMLImageImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC151C71D36D004DB4D0 /* MWKArticle+HTMLImageImport.m */; };
+		5EAADC5C1C71D36D004DB4D0 /* MWKArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC171C71D36D004DB4D0 /* MWKArticle.m */; };
+		5EAADC5D1C71D36D004DB4D0 /* MWKCitation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC191C71D36D004DB4D0 /* MWKCitation.m */; };
+		5EAADC5E1C71D36D004DB4D0 /* MWKImageList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC1B1C71D36D004DB4D0 /* MWKImageList.m */; };
+		5EAADC5F1C71D36D004DB4D0 /* MWKProtectionStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC1D1C71D36D004DB4D0 /* MWKProtectionStatus.m */; };
+		5EAADC601C71D36D004DB4D0 /* MWKSection+HTMLImageExtraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC1F1C71D36D004DB4D0 /* MWKSection+HTMLImageExtraction.m */; };
+		5EAADC611C71D36D004DB4D0 /* MWKSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC211C71D36D004DB4D0 /* MWKSection.m */; };
+		5EAADC621C71D36D004DB4D0 /* MWKSectionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC231C71D36D004DB4D0 /* MWKSectionList.m */; };
+		5EAADC631C71D36D004DB4D0 /* MWKSectionMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC251C71D36D004DB4D0 /* MWKSectionMetaData.m */; };
+		5EAADC641C71D36D004DB4D0 /* MWKDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC2A1C71D36D004DB4D0 /* MWKDataObject.m */; };
+		5EAADC651C71D36D004DB4D0 /* MWKList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC2E1C71D36D004DB4D0 /* MWKList.m */; };
+		5EAADC661C71D36D004DB4D0 /* MWKSiteDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC301C71D36D004DB4D0 /* MWKSiteDataObject.m */; };
+		5EAADC671C71D36D004DB4D0 /* MWKArticle+WMFSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC331C71D36D004DB4D0 /* MWKArticle+WMFSharing.m */; };
+		5EAADC681C71D36D004DB4D0 /* MWKLicense+ToGlyph.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC351C71D36D004DB4D0 /* MWKLicense+ToGlyph.m */; };
+		5EAADC691C71D36D004DB4D0 /* MWKSavedPageList+ImageMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC371C71D36D004DB4D0 /* MWKSavedPageList+ImageMigration.m */; };
+		5EAADC6A1C71D36D004DB4D0 /* MWKSavedPageList+ImageMigrationTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC391C71D36D004DB4D0 /* MWKSavedPageList+ImageMigrationTesting.m */; };
+		5EAADC6B1C71D36D004DB4D0 /* MWKSection+DisplayHtml.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC3B1C71D36D004DB4D0 /* MWKSection+DisplayHtml.m */; };
+		5EAADC6C1C71D36D004DB4D0 /* MWKDataHousekeeping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC3E1C71D36D004DB4D0 /* MWKDataHousekeeping.m */; };
+		5EAADC6D1C71D36D004DB4D0 /* MWKDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC401C71D36D004DB4D0 /* MWKDataStore.m */; };
+		5EAADC6E1C71D36D004DB4D0 /* MWKUserDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC421C71D36D004DB4D0 /* MWKUserDataStore.m */; };
+		5EAADC6F1C71D36D004DB4D0 /* MWKSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC461C71D36D004DB4D0 /* MWKSite.m */; };
+		5EAADC701C71D36D004DB4D0 /* MWKSiteInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC481C71D36D004DB4D0 /* MWKSiteInfo.m */; };
+		5EAADC711C71D36D004DB4D0 /* MWKTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC4A1C71D36D004DB4D0 /* MWKTitle.m */; };
+		5EAADC721C71D36D004DB4D0 /* MWKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC4D1C71D36D004DB4D0 /* MWKUser.m */; };
+		5EAADC731C71D36D004DB4D0 /* WMFArticleBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC511C71D36D004DB4D0 /* WMFArticleBrowserViewController.swift */; };
+		5EAADC741C71D36D004DB4D0 /* WMFArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC521C71D36D004DB4D0 /* WMFArticleViewController.swift */; };
+		5EAADC751C71D36D004DB4D0 /* WMFArticleViewController_Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC531C71D36D004DB4D0 /* WMFArticleViewController_Private.swift */; };
+		5EAADC761C71D36D004DB4D0 /* WMFExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC551C71D36D004DB4D0 /* WMFExploreViewController.swift */; };
+		5EAADC771C71D36D004DB4D0 /* WMFHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC571C71D36D004DB4D0 /* WMFHistoryTableViewController.swift */; };
+		5EAADC781C71D36D004DB4D0 /* WMFSavedArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADC591C71D36D004DB4D0 /* WMFSavedArticleTableViewController.swift */; };
+		D605222B363BB39935B0C1DE /* Pods_wikiswiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E670567AFAC4C7EAE373F4 /* Pods_wikiswiftTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +81,73 @@
 		5E3452D11C71924D007D3D11 /* wikiswiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wikiswiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3452D51C71924D007D3D11 /* wikiswiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikiswiftUITests.swift; sourceTree = "<group>"; };
 		5E3452D71C71924D007D3D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E69F4DF1C71CB79005BD985 /* wikiswift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wikiswift-Bridging-Header.h"; sourceTree = "<group>"; };
 		5EA85A871C71C469007213FD /* SourceIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SourceIcons.xcassets; sourceTree = "<group>"; };
-		5EA85A921C71C5C4007213FD /* WMFExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFExploreViewController.swift; sourceTree = "<group>"; };
-		5EA85A941C71C5F9007213FD /* WMFSavedArticleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFSavedArticleTableViewController.swift; sourceTree = "<group>"; };
-		5EA85A961C71C61A007213FD /* WMFArticleListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleListTableViewController.swift; sourceTree = "<group>"; };
-		5EA85A981C71C638007213FD /* WMFHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFHistoryTableViewController.swift; sourceTree = "<group>"; };
-		5EA85A9A1C71C67A007213FD /* WMFArticleBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleBrowserViewController.swift; sourceTree = "<group>"; };
-		5EA85A9C1C71C6A4007213FD /* WMFArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleViewController.swift; sourceTree = "<group>"; };
-		5EA85A9E1C71C6C8007213FD /* WMFArticleViewController_Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleViewController_Private.swift; sourceTree = "<group>"; };
+		5EAADC101C71D36D004DB4D0 /* WMFArticleListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleListTableViewController.swift; sourceTree = "<group>"; };
+		5EAADC141C71D36D004DB4D0 /* MWKArticle+HTMLImageImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWKArticle+HTMLImageImport.h"; sourceTree = "<group>"; };
+		5EAADC151C71D36D004DB4D0 /* MWKArticle+HTMLImageImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MWKArticle+HTMLImageImport.m"; sourceTree = "<group>"; };
+		5EAADC161C71D36D004DB4D0 /* MWKArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKArticle.h; sourceTree = "<group>"; };
+		5EAADC171C71D36D004DB4D0 /* MWKArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKArticle.m; sourceTree = "<group>"; };
+		5EAADC181C71D36D004DB4D0 /* MWKCitation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKCitation.h; sourceTree = "<group>"; };
+		5EAADC191C71D36D004DB4D0 /* MWKCitation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKCitation.m; sourceTree = "<group>"; };
+		5EAADC1A1C71D36D004DB4D0 /* MWKImageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKImageList.h; sourceTree = "<group>"; };
+		5EAADC1B1C71D36D004DB4D0 /* MWKImageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKImageList.m; sourceTree = "<group>"; };
+		5EAADC1C1C71D36D004DB4D0 /* MWKProtectionStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKProtectionStatus.h; sourceTree = "<group>"; };
+		5EAADC1D1C71D36D004DB4D0 /* MWKProtectionStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKProtectionStatus.m; sourceTree = "<group>"; };
+		5EAADC1E1C71D36D004DB4D0 /* MWKSection+HTMLImageExtraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWKSection+HTMLImageExtraction.h"; sourceTree = "<group>"; };
+		5EAADC1F1C71D36D004DB4D0 /* MWKSection+HTMLImageExtraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MWKSection+HTMLImageExtraction.m"; sourceTree = "<group>"; };
+		5EAADC201C71D36D004DB4D0 /* MWKSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKSection.h; sourceTree = "<group>"; };
+		5EAADC211C71D36D004DB4D0 /* MWKSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKSection.m; sourceTree = "<group>"; };
+		5EAADC221C71D36D004DB4D0 /* MWKSectionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKSectionList.h; sourceTree = "<group>"; };
+		5EAADC231C71D36D004DB4D0 /* MWKSectionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKSectionList.m; sourceTree = "<group>"; };
+		5EAADC241C71D36D004DB4D0 /* MWKSectionMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKSectionMetaData.h; sourceTree = "<group>"; };
+		5EAADC251C71D36D004DB4D0 /* MWKSectionMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKSectionMetaData.m; sourceTree = "<group>"; };
+		5EAADC261C71D36D004DB4D0 /* WMFSharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMFSharing.h; sourceTree = "<group>"; };
+		5EAADC291C71D36D004DB4D0 /* MWKDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKDataObject.h; sourceTree = "<group>"; };
+		5EAADC2A1C71D36D004DB4D0 /* MWKDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKDataObject.m; sourceTree = "<group>"; };
+		5EAADC2B1C71D36D004DB4D0 /* MWKDataStoreList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKDataStoreList.h; sourceTree = "<group>"; };
+		5EAADC2C1C71D36D004DB4D0 /* MWKList+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWKList+Subclass.h"; sourceTree = "<group>"; };
+		5EAADC2D1C71D36D004DB4D0 /* MWKList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKList.h; sourceTree = "<group>"; };
+		5EAADC2E1C71D36D004DB4D0 /* MWKList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKList.m; sourceTree = "<group>"; };
+		5EAADC2F1C71D36D004DB4D0 /* MWKSiteDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKSiteDataObject.h; sourceTree = "<group>"; };
+		5EAADC301C71D36D004DB4D0 /* MWKSiteDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKSiteDataObject.m; sourceTree = "<group>"; };
+		5EAADC321C71D36D004DB4D0 /* MWKArticle+WMFSharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWKArticle+WMFSharing.h"; sourceTree = "<group>"; };
+		5EAADC331C71D36D004DB4D0 /* MWKArticle+WMFSharing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MWKArticle+WMFSharing.m"; sourceTree = "<group>"; };
+		5EAADC341C71D36D004DB4D0 /* MWKLicense+ToGlyph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWKLicense+ToGlyph.h"; sourceTree = "<group>"; };
+		5EAADC351C71D36D004DB4D0 /* MWKLicense+ToGlyph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MWKLicense+ToGlyph.m"; sourceTree = "<group>"; };
+		5EAADC361C71D36D004DB4D0 /* MWKSavedPageList+ImageMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWKSavedPageList+ImageMigration.h"; sourceTree = "<group>"; };
+		5EAADC371C71D36D004DB4D0 /* MWKSavedPageList+ImageMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MWKSavedPageList+ImageMigration.m"; sourceTree = "<group>"; };
+		5EAADC381C71D36D004DB4D0 /* MWKSavedPageList+ImageMigrationTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWKSavedPageList+ImageMigrationTesting.h"; sourceTree = "<group>"; };
+		5EAADC391C71D36D004DB4D0 /* MWKSavedPageList+ImageMigrationTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MWKSavedPageList+ImageMigrationTesting.m"; sourceTree = "<group>"; };
+		5EAADC3A1C71D36D004DB4D0 /* MWKSection+DisplayHtml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWKSection+DisplayHtml.h"; sourceTree = "<group>"; };
+		5EAADC3B1C71D36D004DB4D0 /* MWKSection+DisplayHtml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MWKSection+DisplayHtml.m"; sourceTree = "<group>"; };
+		5EAADC3D1C71D36D004DB4D0 /* MWKDataHousekeeping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKDataHousekeeping.h; sourceTree = "<group>"; };
+		5EAADC3E1C71D36D004DB4D0 /* MWKDataHousekeeping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKDataHousekeeping.m; sourceTree = "<group>"; };
+		5EAADC3F1C71D36D004DB4D0 /* MWKDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKDataStore.h; sourceTree = "<group>"; };
+		5EAADC401C71D36D004DB4D0 /* MWKDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKDataStore.m; sourceTree = "<group>"; };
+		5EAADC411C71D36D004DB4D0 /* MWKUserDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKUserDataStore.h; sourceTree = "<group>"; };
+		5EAADC421C71D36D004DB4D0 /* MWKUserDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKUserDataStore.m; sourceTree = "<group>"; };
+		5EAADC431C71D36D004DB4D0 /* MediaWikiKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaWikiKit.h; sourceTree = "<group>"; };
+		5EAADC451C71D36D004DB4D0 /* MWKSite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKSite.h; sourceTree = "<group>"; };
+		5EAADC461C71D36D004DB4D0 /* MWKSite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKSite.m; sourceTree = "<group>"; };
+		5EAADC471C71D36D004DB4D0 /* MWKSiteInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKSiteInfo.h; sourceTree = "<group>"; };
+		5EAADC481C71D36D004DB4D0 /* MWKSiteInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKSiteInfo.m; sourceTree = "<group>"; };
+		5EAADC491C71D36D004DB4D0 /* MWKTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKTitle.h; sourceTree = "<group>"; };
+		5EAADC4A1C71D36D004DB4D0 /* MWKTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKTitle.m; sourceTree = "<group>"; };
+		5EAADC4C1C71D36D004DB4D0 /* MWKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKUser.h; sourceTree = "<group>"; };
+		5EAADC4D1C71D36D004DB4D0 /* MWKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKUser.m; sourceTree = "<group>"; };
+		5EAADC511C71D36D004DB4D0 /* WMFArticleBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleBrowserViewController.swift; sourceTree = "<group>"; };
+		5EAADC521C71D36D004DB4D0 /* WMFArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleViewController.swift; sourceTree = "<group>"; };
+		5EAADC531C71D36D004DB4D0 /* WMFArticleViewController_Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFArticleViewController_Private.swift; sourceTree = "<group>"; };
+		5EAADC551C71D36D004DB4D0 /* WMFExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFExploreViewController.swift; sourceTree = "<group>"; };
+		5EAADC571C71D36D004DB4D0 /* WMFHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFHistoryTableViewController.swift; sourceTree = "<group>"; };
+		5EAADC591C71D36D004DB4D0 /* WMFSavedArticleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFSavedArticleTableViewController.swift; sourceTree = "<group>"; };
+		6C3DFF3A693F27D94BB2B4B1 /* Pods-wikiswiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikiswiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wikiswiftTests/Pods-wikiswiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		7AD6F7AE310D363C3B46E3A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		86AE8DED36FC7CDA31B4C11D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8951428FFD4FF60CECF40299 /* Pods-wikiswiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikiswiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wikiswiftTests/Pods-wikiswiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B9FC9498D1BE0CE96DBA9C3 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6E670567AFAC4C7EAE373F4 /* Pods_wikiswiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wikiswiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FED80C12686AC19C1A32304 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D605222B363BB39935B0C1DE /* Pods_wikiswiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +184,8 @@
 				5E3452C91C71924D007D3D11 /* wikiswiftTests */,
 				5E3452D41C71924D007D3D11 /* wikiswiftUITests */,
 				5E3452B31C71924C007D3D11 /* Products */,
+				B55E9F63B909373FFBDB541A /* Pods */,
+				B034C0FFE268BB8E89EFBFE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,14 +202,14 @@
 		5E3452B41C71924C007D3D11 /* wikiswift */ = {
 			isa = PBXGroup;
 			children = (
-				5EA85A891C71C5B7007213FD /* Business_Layout */,
+				5EAADC0C1C71D36D004DB4D0 /* Business_Layout */,
+				5E69F5301C71CBBB005BD985 /* Supporting Files */,
 				5E3452B51C71924C007D3D11 /* AppDelegate.swift */,
 				5E3452B71C71924C007D3D11 /* ViewController.swift */,
 				5E3452B91C71924C007D3D11 /* Main.storyboard */,
 				5E3452BC1C71924C007D3D11 /* Assets.xcassets */,
 				5E3452BE1C71924C007D3D11 /* LaunchScreen.storyboard */,
 				5EA85A871C71C469007213FD /* SourceIcons.xcassets */,
-				5E3452C11C71924C007D3D11 /* Info.plist */,
 			);
 			path = wikiswift;
 			sourceTree = "<group>";
@@ -143,90 +232,243 @@
 			path = wikiswiftUITests;
 			sourceTree = "<group>";
 		};
-		5EA85A891C71C5B7007213FD /* Business_Layout */ = {
+		5E69F5301C71CBBB005BD985 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5EA85A8A1C71C5B7007213FD /* Common */,
-				5EA85A8D1C71C5B7007213FD /* Features */,
+				5E3452C11C71924C007D3D11 /* Info.plist */,
+				5E69F4DF1C71CB79005BD985 /* wikiswift-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EAADC0C1C71D36D004DB4D0 /* Business_Layout */ = {
+			isa = PBXGroup;
+			children = (
+				5EAADC0D1C71D36D004DB4D0 /* Common */,
+				5EAADC4E1C71D36D004DB4D0 /* Features */,
 			);
 			path = Business_Layout;
 			sourceTree = "<group>";
 		};
-		5EA85A8A1C71C5B7007213FD /* Common */ = {
+		5EAADC0D1C71D36D004DB4D0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				5EA85A8B1C71C5B7007213FD /* ArticleList */,
-				5EA85A8C1C71C5B7007213FD /* Cells */,
+				5EAADC0E1C71D36D004DB4D0 /* ArticleList */,
+				5EAADC111C71D36D004DB4D0 /* Model */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		5EA85A8B1C71C5B7007213FD /* ArticleList */ = {
+		5EAADC0E1C71D36D004DB4D0 /* ArticleList */ = {
 			isa = PBXGroup;
 			children = (
-				5EA85A961C71C61A007213FD /* WMFArticleListTableViewController.swift */,
+				5EAADC0F1C71D36D004DB4D0 /* Cells */,
+				5EAADC101C71D36D004DB4D0 /* WMFArticleListTableViewController.swift */,
 			);
 			path = ArticleList;
 			sourceTree = "<group>";
 		};
-		5EA85A8C1C71C5B7007213FD /* Cells */ = {
+		5EAADC0F1C71D36D004DB4D0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		5EA85A8D1C71C5B7007213FD /* Features */ = {
+		5EAADC111C71D36D004DB4D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5EA85A8E1C71C5B7007213FD /* Article */,
-				5EA85A8F1C71C5B7007213FD /* Explore */,
-				5EA85A901C71C5B7007213FD /* Histroy */,
-				5EA85A911C71C5B7007213FD /* SavedPages */,
+				5EAADC121C71D36D004DB4D0 /* Article */,
+				5EAADC271C71D36D004DB4D0 /* MediaWikiKit */,
 			);
-			path = Features;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		5EA85A8E1C71C5B7007213FD /* Article */ = {
+		5EAADC121C71D36D004DB4D0 /* Article */ = {
 			isa = PBXGroup;
 			children = (
-				5EA85AA01C71C6E7007213FD /* ArticleComponents */,
-				5EA85A9E1C71C6C8007213FD /* WMFArticleViewController_Private.swift */,
-				5EA85A9C1C71C6A4007213FD /* WMFArticleViewController.swift */,
-				5EA85A9A1C71C67A007213FD /* WMFArticleBrowserViewController.swift */,
+				5EAADC131C71D36D004DB4D0 /* Model */,
+				5EAADC261C71D36D004DB4D0 /* WMFSharing.h */,
 			);
 			path = Article;
 			sourceTree = "<group>";
 		};
-		5EA85A8F1C71C5B7007213FD /* Explore */ = {
+		5EAADC131C71D36D004DB4D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5EA85A921C71C5C4007213FD /* WMFExploreViewController.swift */,
+				5EAADC141C71D36D004DB4D0 /* MWKArticle+HTMLImageImport.h */,
+				5EAADC151C71D36D004DB4D0 /* MWKArticle+HTMLImageImport.m */,
+				5EAADC161C71D36D004DB4D0 /* MWKArticle.h */,
+				5EAADC171C71D36D004DB4D0 /* MWKArticle.m */,
+				5EAADC181C71D36D004DB4D0 /* MWKCitation.h */,
+				5EAADC191C71D36D004DB4D0 /* MWKCitation.m */,
+				5EAADC1A1C71D36D004DB4D0 /* MWKImageList.h */,
+				5EAADC1B1C71D36D004DB4D0 /* MWKImageList.m */,
+				5EAADC1C1C71D36D004DB4D0 /* MWKProtectionStatus.h */,
+				5EAADC1D1C71D36D004DB4D0 /* MWKProtectionStatus.m */,
+				5EAADC1E1C71D36D004DB4D0 /* MWKSection+HTMLImageExtraction.h */,
+				5EAADC1F1C71D36D004DB4D0 /* MWKSection+HTMLImageExtraction.m */,
+				5EAADC201C71D36D004DB4D0 /* MWKSection.h */,
+				5EAADC211C71D36D004DB4D0 /* MWKSection.m */,
+				5EAADC221C71D36D004DB4D0 /* MWKSectionList.h */,
+				5EAADC231C71D36D004DB4D0 /* MWKSectionList.m */,
+				5EAADC241C71D36D004DB4D0 /* MWKSectionMetaData.h */,
+				5EAADC251C71D36D004DB4D0 /* MWKSectionMetaData.m */,
 			);
-			path = Explore;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		5EA85A901C71C5B7007213FD /* Histroy */ = {
+		5EAADC271C71D36D004DB4D0 /* MediaWikiKit */ = {
 			isa = PBXGroup;
 			children = (
-				5EA85A981C71C638007213FD /* WMFHistoryTableViewController.swift */,
+				5EAADC281C71D36D004DB4D0 /* Baseclasses */,
+				5EAADC311C71D36D004DB4D0 /* Categories */,
+				5EAADC3C1C71D36D004DB4D0 /* DataStore */,
+				5EAADC431C71D36D004DB4D0 /* MediaWikiKit.h */,
+				5EAADC441C71D36D004DB4D0 /* Metadata */,
+				5EAADC4B1C71D36D004DB4D0 /* User */,
 			);
-			path = Histroy;
+			path = MediaWikiKit;
 			sourceTree = "<group>";
 		};
-		5EA85A911C71C5B7007213FD /* SavedPages */ = {
+		5EAADC281C71D36D004DB4D0 /* Baseclasses */ = {
 			isa = PBXGroup;
 			children = (
-				5EA85A941C71C5F9007213FD /* WMFSavedArticleTableViewController.swift */,
+				5EAADC291C71D36D004DB4D0 /* MWKDataObject.h */,
+				5EAADC2A1C71D36D004DB4D0 /* MWKDataObject.m */,
+				5EAADC2B1C71D36D004DB4D0 /* MWKDataStoreList.h */,
+				5EAADC2C1C71D36D004DB4D0 /* MWKList+Subclass.h */,
+				5EAADC2D1C71D36D004DB4D0 /* MWKList.h */,
+				5EAADC2E1C71D36D004DB4D0 /* MWKList.m */,
+				5EAADC2F1C71D36D004DB4D0 /* MWKSiteDataObject.h */,
+				5EAADC301C71D36D004DB4D0 /* MWKSiteDataObject.m */,
 			);
-			path = SavedPages;
+			path = Baseclasses;
 			sourceTree = "<group>";
 		};
-		5EA85AA01C71C6E7007213FD /* ArticleComponents */ = {
+		5EAADC311C71D36D004DB4D0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5EAADC321C71D36D004DB4D0 /* MWKArticle+WMFSharing.h */,
+				5EAADC331C71D36D004DB4D0 /* MWKArticle+WMFSharing.m */,
+				5EAADC341C71D36D004DB4D0 /* MWKLicense+ToGlyph.h */,
+				5EAADC351C71D36D004DB4D0 /* MWKLicense+ToGlyph.m */,
+				5EAADC361C71D36D004DB4D0 /* MWKSavedPageList+ImageMigration.h */,
+				5EAADC371C71D36D004DB4D0 /* MWKSavedPageList+ImageMigration.m */,
+				5EAADC381C71D36D004DB4D0 /* MWKSavedPageList+ImageMigrationTesting.h */,
+				5EAADC391C71D36D004DB4D0 /* MWKSavedPageList+ImageMigrationTesting.m */,
+				5EAADC3A1C71D36D004DB4D0 /* MWKSection+DisplayHtml.h */,
+				5EAADC3B1C71D36D004DB4D0 /* MWKSection+DisplayHtml.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5EAADC3C1C71D36D004DB4D0 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				5EAADC3D1C71D36D004DB4D0 /* MWKDataHousekeeping.h */,
+				5EAADC3E1C71D36D004DB4D0 /* MWKDataHousekeeping.m */,
+				5EAADC3F1C71D36D004DB4D0 /* MWKDataStore.h */,
+				5EAADC401C71D36D004DB4D0 /* MWKDataStore.m */,
+				5EAADC411C71D36D004DB4D0 /* MWKUserDataStore.h */,
+				5EAADC421C71D36D004DB4D0 /* MWKUserDataStore.m */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		5EAADC441C71D36D004DB4D0 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				5EAADC451C71D36D004DB4D0 /* MWKSite.h */,
+				5EAADC461C71D36D004DB4D0 /* MWKSite.m */,
+				5EAADC471C71D36D004DB4D0 /* MWKSiteInfo.h */,
+				5EAADC481C71D36D004DB4D0 /* MWKSiteInfo.m */,
+				5EAADC491C71D36D004DB4D0 /* MWKTitle.h */,
+				5EAADC4A1C71D36D004DB4D0 /* MWKTitle.m */,
+			);
+			path = Metadata;
+			sourceTree = "<group>";
+		};
+		5EAADC4B1C71D36D004DB4D0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				5EAADC4C1C71D36D004DB4D0 /* MWKUser.h */,
+				5EAADC4D1C71D36D004DB4D0 /* MWKUser.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		5EAADC4E1C71D36D004DB4D0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5EAADC4F1C71D36D004DB4D0 /* Article */,
+				5EAADC541C71D36D004DB4D0 /* Explore */,
+				5EAADC561C71D36D004DB4D0 /* Histroy */,
+				5EAADC581C71D36D004DB4D0 /* SavedPages */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5EAADC4F1C71D36D004DB4D0 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				5EAADC501C71D36D004DB4D0 /* ArticleComponents */,
+				5EAADC511C71D36D004DB4D0 /* WMFArticleBrowserViewController.swift */,
+				5EAADC521C71D36D004DB4D0 /* WMFArticleViewController.swift */,
+				5EAADC531C71D36D004DB4D0 /* WMFArticleViewController_Private.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		5EAADC501C71D36D004DB4D0 /* ArticleComponents */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ArticleComponents;
+			sourceTree = "<group>";
+		};
+		5EAADC541C71D36D004DB4D0 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				5EAADC551C71D36D004DB4D0 /* WMFExploreViewController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		5EAADC561C71D36D004DB4D0 /* Histroy */ = {
+			isa = PBXGroup;
+			children = (
+				5EAADC571C71D36D004DB4D0 /* WMFHistoryTableViewController.swift */,
+			);
+			path = Histroy;
+			sourceTree = "<group>";
+		};
+		5EAADC581C71D36D004DB4D0 /* SavedPages */ = {
+			isa = PBXGroup;
+			children = (
+				5EAADC591C71D36D004DB4D0 /* WMFSavedArticleTableViewController.swift */,
+			);
+			path = SavedPages;
+			sourceTree = "<group>";
+		};
+		B034C0FFE268BB8E89EFBFE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B9FC9498D1BE0CE96DBA9C3 /* Pods.framework */,
+				D6E670567AFAC4C7EAE373F4 /* Pods_wikiswiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B55E9F63B909373FFBDB541A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86AE8DED36FC7CDA31B4C11D /* Pods.debug.xcconfig */,
+				7AD6F7AE310D363C3B46E3A9 /* Pods.release.xcconfig */,
+				8951428FFD4FF60CECF40299 /* Pods-wikiswiftTests.debug.xcconfig */,
+				6C3DFF3A693F27D94BB2B4B1 /* Pods-wikiswiftTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +478,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E3452DA1C71924D007D3D11 /* Build configuration list for PBXNativeTarget "wikiswift" */;
 			buildPhases = (
+				2F2DD9D89510705DFEBCFBE5 /* Check Pods Manifest.lock */,
 				5E3452AE1C71924C007D3D11 /* Sources */,
 				5E3452AF1C71924C007D3D11 /* Frameworks */,
 				5E3452B01C71924C007D3D11 /* Resources */,
+				BC04400F24CFA883647444F2 /* Embed Pods Frameworks */,
+				0B341C1961FC090742770817 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,9 +498,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E3452DD1C71924D007D3D11 /* Build configuration list for PBXNativeTarget "wikiswiftTests" */;
 			buildPhases = (
+				71F430FB8413DFFA62936DDD /* Check Pods Manifest.lock */,
 				5E3452C21C71924D007D3D11 /* Sources */,
 				5E3452C31C71924D007D3D11 /* Frameworks */,
 				5E3452C41C71924D007D3D11 /* Resources */,
+				F8C25543B6EB75BE41B2C9FD /* Embed Pods Frameworks */,
+				DCA2696DB0D80D2E06BDB91F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -359,20 +607,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B341C1961FC090742770817 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F2DD9D89510705DFEBCFBE5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71F430FB8413DFFA62936DDD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC04400F24CFA883647444F2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCA2696DB0D80D2E06BDB91F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wikiswiftTests/Pods-wikiswiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C25543B6EB75BE41B2C9FD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wikiswiftTests/Pods-wikiswiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E3452AE1C71924C007D3D11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EA85A931C71C5C4007213FD /* WMFExploreViewController.swift in Sources */,
+				5EAADC6A1C71D36D004DB4D0 /* MWKSavedPageList+ImageMigrationTesting.m in Sources */,
+				5EAADC5E1C71D36D004DB4D0 /* MWKImageList.m in Sources */,
+				5EAADC5B1C71D36D004DB4D0 /* MWKArticle+HTMLImageImport.m in Sources */,
+				5EAADC5F1C71D36D004DB4D0 /* MWKProtectionStatus.m in Sources */,
+				5EAADC701C71D36D004DB4D0 /* MWKSiteInfo.m in Sources */,
+				5EAADC661C71D36D004DB4D0 /* MWKSiteDataObject.m in Sources */,
+				5EAADC621C71D36D004DB4D0 /* MWKSectionList.m in Sources */,
+				5EAADC681C71D36D004DB4D0 /* MWKLicense+ToGlyph.m in Sources */,
+				5EAADC631C71D36D004DB4D0 /* MWKSectionMetaData.m in Sources */,
+				5EAADC771C71D36D004DB4D0 /* WMFHistoryTableViewController.swift in Sources */,
+				5EAADC6C1C71D36D004DB4D0 /* MWKDataHousekeeping.m in Sources */,
+				5EAADC671C71D36D004DB4D0 /* MWKArticle+WMFSharing.m in Sources */,
+				5EAADC6B1C71D36D004DB4D0 /* MWKSection+DisplayHtml.m in Sources */,
+				5EAADC751C71D36D004DB4D0 /* WMFArticleViewController_Private.swift in Sources */,
+				5EAADC781C71D36D004DB4D0 /* WMFSavedArticleTableViewController.swift in Sources */,
+				5EAADC5A1C71D36D004DB4D0 /* WMFArticleListTableViewController.swift in Sources */,
+				5EAADC691C71D36D004DB4D0 /* MWKSavedPageList+ImageMigration.m in Sources */,
+				5EAADC5D1C71D36D004DB4D0 /* MWKCitation.m in Sources */,
+				5EAADC6E1C71D36D004DB4D0 /* MWKUserDataStore.m in Sources */,
+				5EAADC721C71D36D004DB4D0 /* MWKUser.m in Sources */,
+				5EAADC731C71D36D004DB4D0 /* WMFArticleBrowserViewController.swift in Sources */,
+				5EAADC5C1C71D36D004DB4D0 /* MWKArticle.m in Sources */,
+				5EAADC6F1C71D36D004DB4D0 /* MWKSite.m in Sources */,
+				5EAADC6D1C71D36D004DB4D0 /* MWKDataStore.m in Sources */,
 				5E3452B81C71924C007D3D11 /* ViewController.swift in Sources */,
+				5EAADC611C71D36D004DB4D0 /* MWKSection.m in Sources */,
+				5EAADC761C71D36D004DB4D0 /* WMFExploreViewController.swift in Sources */,
+				5EAADC641C71D36D004DB4D0 /* MWKDataObject.m in Sources */,
+				5EAADC711C71D36D004DB4D0 /* MWKTitle.m in Sources */,
+				5EAADC741C71D36D004DB4D0 /* WMFArticleViewController.swift in Sources */,
+				5EAADC651C71D36D004DB4D0 /* MWKList.m in Sources */,
 				5E3452B61C71924C007D3D11 /* AppDelegate.swift in Sources */,
-				5EA85A9F1C71C6C8007213FD /* WMFArticleViewController_Private.swift in Sources */,
-				5EA85A9B1C71C67A007213FD /* WMFArticleBrowserViewController.swift in Sources */,
-				5EA85A951C71C5F9007213FD /* WMFSavedArticleTableViewController.swift in Sources */,
-				5EA85A971C71C61A007213FD /* WMFArticleListTableViewController.swift in Sources */,
-				5EA85A9D1C71C6A4007213FD /* WMFArticleViewController.swift in Sources */,
-				5EA85A991C71C638007213FD /* WMFHistoryTableViewController.swift in Sources */,
+				5EAADC601C71D36D004DB4D0 /* MWKSection+HTMLImageExtraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,28 +877,36 @@
 		};
 		5E3452DB1C71924D007D3D11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86AE8DED36FC7CDA31B4C11D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = wikiswift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.djzhang.wikiswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wikiswift/wikiswift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		5E3452DC1C71924D007D3D11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AD6F7AE310D363C3B46E3A9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = wikiswift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.djzhang.wikiswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wikiswift/wikiswift-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		5E3452DE1C71924D007D3D11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8951428FFD4FF60CECF40299 /* Pods-wikiswiftTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = wikiswiftTests/Info.plist;
@@ -546,6 +919,7 @@
 		};
 		5E3452DF1C71924D007D3D11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3DFF3A693F27D94BB2B4B1 /* Pods-wikiswiftTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = wikiswiftTests/Info.plist;
